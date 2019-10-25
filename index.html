@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tamagotchi</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>TAMAGOTCHI v0.0.1</h1>
+
+  <!-- Buttons -->
+  <div class="button-row">
+    <button id="button-a" title="start" type="button">A</button>
+    <button id="button-b" title="feed" type="button">B</button>
+    <button id="button-c" title="" type="button">C</button>
+  </div>
+
+  <!-- Canvas or Options -->
+  <div id="canvas-wrapper">
+    <canvas id="canvas" width="600", height="300">Canvas is not supported...</canvas>
+    <ul id="options-div">
+      <li class="option">...</li>
+      <li class="option">...</li>
+    </ul>
+  </div>
+
+  <!-- For debugging -->
+  <div style="display:none">
+    <input id="input" type="text" placeholder="Debug command..."/>
+    <button id="button-s" type="button">S</button>
+  </div>
+
+  <!-- Load spritesheets -->
+  <div style="display:none">
+    <img src="Spritesheets/idle.png" id="idle-png"/>
+    <img src="Spritesheets/eat.png" id="eat-png"/>
+    <img src="Spritesheets/other.png" id="other-png"/>
+  </div>
+
+  <!-- Load scripts -->
+  <script src="coroutine.js"></script>
+  <script src="spritesheet.js"></script>
+  <script src="animations.js"></script>
+  <script src="tamagotchi.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Testing script -->
+  <script src="test.js"></script>
+
+</body>
+</html>
